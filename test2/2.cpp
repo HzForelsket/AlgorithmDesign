@@ -10,9 +10,8 @@ int main()
 }
 int dfs(int k)
 {
-	printf("%d\n",k);
-	int t=0;
-	for(int i=k/2;i!=0;i>>=1)
+	int t=1;
+	for(int i=k/2;i!=0;i--)
 	{
 		t+=dfs(i);
 	}
